@@ -1,0 +1,197 @@
+
+.oswald-600 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.open-sans-400 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 40;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1 {
+  composes: oswald-600 from "./styles.css";
+  font-size: 1.5em;
+  margin: 0;
+}
+
+h2, h3 {
+  composes: oswald-600 from "./styles.css";
+  font-size: 1.2em;
+  margin: 0;
+}
+
+body, p, li, span {
+  composes: open-sans-400 from "./styles.css";
+    margin: 10px 25px;
+    padding: 10px 25px;
+}
+
+nav li, a{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    margin: 0 15px;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #91C6BC;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+a:hover {
+    color: #4B9DA9; 
+}
+
+header {
+    background-color: #F6F3C2;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ .btn{
+        padding: 12px 24px;
+        font-size: 18px;
+        background-color: #333333;
+        color: #F6F3C2;
+        border: 1px solid #333333;
+        border-radius: 5px;
+        margin: 0;
+        text-decoration: none;
+    }
+
+    
+    .skills {
+        list-style: none;
+        font-size: .75em;
+        text-align: left;
+    }
+
+    .skills li {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .divider {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        width: auto;
+        margin: 20px auto;
+        align-items: center;
+    }   
+
+    #projects .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    #projects .project-list img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    #projects .project-list  a {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    #contact img {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    header{
+        padding: 30px 0;
+    }   
+
+    #about  {
+        display: flex;
+        align-items: center;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .skills {
+        text-align: left;
+        margin-left: 20px;
+        padding: 0;
+        list-style: none;
+        font-size: .75em;
+    }
+
+    
+
+    .divider {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        margin: 20px auto;
+        align-items: center;
+    }   
+
+    .divider h2 {
+        flex-grow: 1;
+        margin-bottom: 10px;
+    }
+
+    .profile{
+        width: 15%;
+        height: 15%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    nav li, a{
+        margin: 0 25px;
+        display: inline-block;
+    }
+}
