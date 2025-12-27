@@ -27,9 +27,15 @@ h1 {
   margin: 0;
 }
 
-h2, h3 {
+h2 {
   composes: oswald-600 from "./styles.css";
-  font-size: 1.2em;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+h3 {
+  composes: oswald-600 from "./styles.css";
+  font-size: 1.1em;
   margin: 0;
 }
 
@@ -96,8 +102,8 @@ header {
     }
 
     .skills li {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
 
     .divider {
@@ -162,6 +168,11 @@ header {
         padding: 0;
         list-style: none;
         font-size: .75em;
+    }
+
+    skills li {
+       margin: 0;
+       padding: 0;
     }
 
     
